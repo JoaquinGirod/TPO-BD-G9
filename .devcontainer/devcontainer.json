@@ -1,0 +1,9 @@
+{
+	"name": "TPEO Bases de Datos II",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/mongosh-homebrew:1": {},
+		"ghcr.io/itsmechlark/features/redis-server:1": {}
+	},
+	"postCreateCommand": "pip install -r requirements.txt"
+}
