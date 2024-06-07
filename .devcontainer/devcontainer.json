@@ -4,6 +4,5 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/mongosh-homebrew:1": {},
 		"ghcr.io/itsmechlark/features/redis-server:1": {}
-	},
-	"postCreateCommand": "pip install -r requirements.txt"
+	}
 }
