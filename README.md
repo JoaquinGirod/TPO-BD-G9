@@ -57,16 +57,6 @@ db.albums.updateMany(
 
 ### Query 3 : Score de Cada Artista
 ```js
-db.albums.updateMany(
-  {}, 
-  [
-    {
-      $set: {
-        Score: { $subtract: [501, "$Number"] } 
-      }
-    }
-  ]
-)
 db.albums.aggregate([
   {
     $group: {
