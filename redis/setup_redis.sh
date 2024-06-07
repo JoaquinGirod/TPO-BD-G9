@@ -9,6 +9,7 @@ docker run --name $CONTAINER_NAME -p 6379:6379 -d redis
 
 docker cp $CSV_PATH $CONTAINER_NAME:/$CSV_PATH
 docker cp $BASH_EXECUTION_PATH $CONTAINER_NAME:/$BASH_EXECUTION_PATH
+pip install redis
 python import_redis.py 
 
 docker exec -it $CONTAINER_NAME bash -c "bash /$BASH_EXECUTION_PATH"
